@@ -1,265 +1,247 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>E-book Perícia Judicial Farmacêutica | Christian Matos</title>
+<title>E-book Perícia Judicial Farmacêutica | Christian Matos</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fa;
-      color: #1d2733;
-      line-height: 1.6;
-    }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+    line-height: 1.6;
+}
 
-    .hero {
-      background: linear-gradient(135deg, #082b52, #125a91);
-      color: white;
-      padding: 55px 20px;
-      text-align: center;
-    }
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px 18px;
+}
 
-    .badge {
-      display: inline-block;
-      background: #d4af37;
-      color: #10243b;
-      padding: 7px 18px;
-      border-radius: 30px;
-      font-weight: bold;
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
+.hero {
+    background: linear-gradient(135deg, #0756a8, #0b78d0);
+    color: white;
+    text-align: center;
+    padding: 55px 25px;
+    border-radius: 0 0 30px 30px;
+}
 
+.badge {
+    display: inline-block;
+    background: #f5c400;
+    color: #172033;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 20px;
+    opacity: 0.95;
+}
+
+.card {
+    background: white;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #0756a8;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin: 15px 0 20px 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.download {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #0b8f45;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 17px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.btn:hover {
+    background: #08763a;
+}
+
+.author {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.author strong {
+    color: #0756a8;
+}
+
+.footer {
+    text-align: center;
+    color: #667085;
+    padding: 25px;
+    font-size: 14px;
+}
+
+.instagram {
+    color: #0756a8;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
     h1 {
-      font-size: 38px;
-      line-height: 1.15;
-      margin-bottom: 15px;
+        font-size: 28px;
     }
 
     .subtitle {
-      font-size: 20px;
-      max-width: 700px;
-      margin: auto;
-      opacity: 0.95;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: -30px auto 40px;
-      padding: 0 18px;
+        font-size: 17px;
     }
 
     .card {
-      background: white;
-      border-radius: 18px;
-      padding: 35px 25px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.10);
-      margin-bottom: 25px;
-      text-align: center;
+        padding: 22px;
     }
 
-    .book-icon {
-      font-size: 65px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      color: #0b4778;
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    .author {
-      font-size: 18px;
-      font-weight: bold;
-      color: #555;
-      margin-bottom: 20px;
-    }
-
-    .description {
-      max-width: 700px;
-      margin: auto;
-      font-size: 17px;
-      color: #444;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 28px;
-      background: #d4af37;
-      color: #10243b;
-      text-decoration: none;
-      padding: 17px 30px;
-      border-radius: 10px;
-      font-size: 18px;
-      font-weight: bold;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    }
-
-    .button:hover {
-      opacity: 0.9;
-    }
-
-    .info {
-      text-align: left;
-      margin-top: 25px;
-    }
-
-    .info p {
-      margin-bottom: 12px;
-    }
-
-    .next {
-      background: #eef5fa;
-      border-left: 5px solid #d4af37;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 25px;
-    }
-
-    footer {
-      background: #082b52;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 30px;
-      }
-
-      .subtitle {
-        font-size: 17px;
-      }
-
-      h2 {
-        font-size: 24px;
-      }
-
-      .button {
+    .btn {
         width: 100%;
-        padding: 16px 10px;
-      }
+        font-size: 18px;
     }
-  </style>
+}
+</style>
 </head>
 
 <body>
 
-  <section class="hero">
-    <div class="badge">E-BOOK GRATUITO</div>
+<section class="hero">
+    <div class="container">
 
-    <h1>Perícia Judicial Farmacêutica</h1>
+        <div class="badge">E-BOOK GRATUITO</div>
 
-    <p class="subtitle">
-      Volume 1 — Primeiros Passos para Pensar como Perito
-    </p>
-  </section>
+        <h1>Perícia Judicial Farmacêutica</h1>
 
-  <main class="container">
-
-    <section class="card">
-
-      <div class="book-icon">📚</div>
-
-      <h2>Perícia Judicial Farmacêutica</h2>
-
-      <p class="author">
-        Autor: Christian Matos
-      </p>
-
-      <p class="description">
-        Um material introdutório desenvolvido para farmacêuticos
-        que desejam conhecer a área de Perícia Judicial Farmacêutica
-        e começar a desenvolver o raciocínio pericial.
-      </p>
-
-      <a
-        class="button"
-        href="./Ebook%20Pericia%20Judicial%20Farmac%C3%AAutica%20Volume%201%20%28Primeiros%20Passos%29%20-%20Autor%20Christian%20Matos.pdf"
-        target="_blank">
-        📥 BAIXAR E-BOOK GRATUITAMENTE
-      </a>
-
-    </section>
-
-    <section class="card">
-
-      <h2>Sobre o autor</h2>
-
-      <div class="info">
-
-        <p>
-          <strong>Christian Matos</strong> é farmacêutico, pós-graduado
-          em Farmácia Clínica e Cuidados Farmacêuticos, com formação
-          e atuação relacionada à Perícia Judicial Farmacêutica,
-          Grafotécnica e Documentoscopia.
+        <p class="subtitle">
+            Volume 1 — Primeiros Passos
         </p>
 
-        <p>
-          Também é acadêmico de Direito e possui experiência profissional
-          na área farmacêutica, representação de medicamentos e atividades
-          relacionadas ao setor de saúde.
+        <p style="margin-top:20px;">
+            Um guia introdutório para farmacêuticos que desejam conhecer
+            a área da Perícia Judicial Farmacêutica.
         </p>
 
-      </div>
+    </div>
+</section>
 
-    </section>
+<div class="container">
 
-    <section class="card">
+    <div class="card">
 
-      <h2>O que você encontrará neste volume?</h2>
-
-      <div class="info">
-
-        <p>🔹 Introdução à Perícia Judicial Farmacêutica</p>
-
-        <p>🔹 Primeiros passos para atuar como perito</p>
-
-        <p>🔹 Desenvolvimento do pensamento pericial</p>
-
-        <p>🔹 Reflexões para desenvolver o olhar técnico</p>
-
-        <p>🔹 Orientações para quem deseja conhecer essa área profissional</p>
-
-      </div>
-
-      <div class="next">
-
-        <strong>📖 Volume 2 em breve</strong>
+        <h2>📚 Sobre o e-book</h2>
 
         <p>
-          Um novo volume está previsto para o Dia Nacional do Farmacêutico,
-          em 20 de janeiro.
+            Este e-book foi desenvolvido para farmacêuticos que desejam
+            dar os primeiros passos na área de Perícia Judicial.
         </p>
 
-      </div>
+        <p style="margin-top:15px;">
+            O objetivo é apresentar conceitos iniciais e ajudar o
+            profissional a começar a desenvolver uma visão pericial,
+            compreendendo o papel do farmacêutico nesse campo de atuação.
+        </p>
 
-    </section>
+    </div>
 
-  </main>
+    <div class="card">
 
-  <footer>
+        <h2>🎯 O que você encontrará</h2>
 
-    <p>
-      © 2026 Christian Matos — Perícia Judicial Farmacêutica
-    </p>
+        <ul>
+            <li>Introdução à Perícia Judicial Farmacêutica;</li>
+            <li>O papel do farmacêutico como perito;</li>
+            <li>Primeiros conceitos da atividade pericial;</li>
+            <li>Como começar a pensar como perito;</li>
+            <li>Orientações para quem deseja ingressar na área;</li>
+            <li>Informações importantes para os primeiros passos.</li>
+        </ul>
 
-    <p>
-      Material disponibilizado gratuitamente para fins educacionais.
-    </p>
+    </div>
 
-  </footer>
+    <div class="download">
+
+        <h2>📥 Baixe gratuitamente</h2>
+
+        <p style="margin-bottom:20px;">
+            Clique no botão abaixo para acessar o e-book.
+        </p>
+
+        <a class="btn"
+           href="Ebook%20Pericia%20Judicial%20Farmace%CC%82utica%20Volume%201%20%28Primeiros%20Passos%29%20-%20Autor%20Christian%20Matos.pdf"
+           target="_blank">
+            📖 BAIXAR E-BOOK GRATUITAMENTE
+        </a>
+
+    </div>
+
+    <div class="author">
+
+        <h2>✍️ Sobre o autor</h2>
+
+        <p>
+            <strong>Christian Matos</strong> é farmacêutico,
+            pós-graduado em Farmácia Clínica e Cuidados Farmacêuticos,
+            com formação e experiência na área de Perícia Judicial
+            Farmacêutica, Grafotécnica e Documentoscopia.
+        </p>
+
+        <p style="margin-top:15px;">
+            Também é acadêmico de Direito e atua profissionalmente
+            na área farmacêutica, conciliando experiência prática,
+            conhecimento técnico e formação jurídica.
+        </p>
+
+        <p style="margin-top:20px;">
+            Instagram:
+            <span class="instagram">@farma.christian</span>
+        </p>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+
+    © 2026 Christian Matos — Perícia Judicial Farmacêutica
+
+</footer>
 
 </body>
 </html>
